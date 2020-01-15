@@ -31,6 +31,14 @@
     color: #003366;
 }
 
+.menu-opcoes a:hover {
+    color: #007dc6;
+}
+
+.menu-opcoes a:active {
+    color: #867dc6;
+}
+
 body {
     color: #333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -58,6 +66,19 @@ header {
     margin: 10px;
 }
 
+.busca input[type=search] {
+    width: 170px;
+}
+
+.busca button {
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+
 .menu-departamentos {
     clear: left;
     margin-top: 10px;
@@ -70,13 +91,26 @@ header {
     padding: 5px 10px;
 }
 
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a::before {
+    content: '- ';
+
+}
+
 .menu-departamentos a {
     color: #333;
     text-decoration: none;
-}
-
-.busca input[type=search] {
-    width: 170px;
 }
 
 .destaque {
@@ -125,6 +159,8 @@ footer {
     background-image: url(../img/fundo-rodape.png);
     clear: both;
     padding: 20px 0;
+}
+footer .container {
     position: relative;
 }
 
@@ -132,7 +168,6 @@ footer {
     position: absolute;
     top: 12px;
     right: 0;
-  
 }
 
 .social li {
