@@ -151,6 +151,10 @@ header {
     transform: scale(1.2) rotate(5deg);
 }
 
+.painel li:nth-child(n+7) {
+    display: none;
+}
+
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
@@ -164,6 +168,10 @@ header {
     font-size: 14px;
     text-align: center;
     text-decoration: none;
+}
+
+.painel-aberto li:nth-child(n+7) {
+    display: inline-block;
 }
 
 .novidades {
